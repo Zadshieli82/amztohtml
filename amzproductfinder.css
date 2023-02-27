@@ -1,0 +1,131 @@
+#product_container {
+    display:grid;
+    background: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin:15px auto;
+    box-sizing: border-box;
+  }
+  .product_content {
+    display:block;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    padding: 25px 15px 15px;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    height: max-content;
+  }
+  .product_img img {
+    display: block;
+    box-sizing: border-box;
+    width: 250px !important;
+    height: 250px !important;
+    object-fit: scale-down;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  .product_name a {
+    display: block;
+    color: #256aaf !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  .product_name a:hover {
+    color: #0c5196 !important;
+  }
+  .producth_rating {
+    text-align: left;
+    padding: 0;
+    margin: 5px 0;
+  }
+  .stars_container {
+    display: inline-block;
+    font-size: 16px !important;
+    overflow: hidden;
+    vertical-align: sub;
+    margin: 0;
+    padding: 0;
+  }
+  .star_wrap {
+    display: inline-block;
+    height: 19px;
+    margin: 0;
+    padding: 0;
+  }
+  .stars_active {
+    color: #f1c40f;
+    z-index: 10;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  .totalh_reviews {
+    font-size: 15px !important;
+    margin-top: 5px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+  }
+  .product_price {
+    display:block;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }
+  .price_c, .divisa_c {
+    display: inline-block;
+    color: #272727 !important;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+  }
+  .price_c {
+    font-size: 20px !important;
+    font-weight: 600;
+  }
+  .divisa_c {
+    font-size: 15px !important;
+    font-weight: 600;
+  }
+  .product_buy a {
+    display: block;
+    box-sizing: border-box;
+    background: linear-gradient(180deg,#f7dfa5,#f0c14b) repeat scroll 0 0 transparent;
+    color: #000 !important;
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 15px !important;
+    font-weight: 400;
+    border: 1px solid #846a29;
+    border-radius: 3px;
+    padding: 6px 12px;
+    margin-top: 10px;
+  }
+  .product_buy a:hover {
+    background: linear-gradient(180deg,#f5d78e,#eeb933) repeat scroll 0 0 transparent;
+    color: #111!important;
+  }
+  .fa-amazon, .fa-shopping-cart{
+    margin-right: 5px;
+  }
+ /* Para móviles */
+  @media screen and (max-width: 520px) {
+    #product_container {grid-template-columns: 1fr;}
+  }
+  /* Para tabletas */
+  @media screen and (min-width: 521px) and (max-width: 789px) {
+    #product_container {grid-template-columns: 1fr 1fr;}
+  }
+    /* Para pantallas más grandes */
+    @media screen and (min-width: 790px) and (max-width: 1200px) {
+      #product_container {grid-template-columns: 1fr 1fr 1fr;}
+  }
